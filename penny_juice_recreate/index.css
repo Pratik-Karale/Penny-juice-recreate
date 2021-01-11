@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+section{
+    padding: 7% 10%;
+}
+
+
+/* NavBar    */
+
+nav{
+    background-color: #2e5a1c;
+    position: sticky;
+    top: 0px;
+    text-align: justify;
+}
+.logo{
+    width: 130px;
+    margin: 8px 15px;
+}
+
+nav ul{
+    font-size: 1.1rem;
+    float: right;
+    letter-spacing: 3px;
+    margin: 1.5em 0;
+    padding-right: 2em;
+}
+nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav-links{
+    text-decoration: none;
+    color: #4e9525;
+}
+.nav-links:hover{
+    text-decoration: underline;
+    color: #edf0c7;
+}
+.active-link{
+    color: #edf0c7;
+}
+
+
+/* Title section  */
+
+#title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7% 8% 10% 15%;
+    text-align: left;
+    background-image: url(imgs/title-pattern.png);
+}
+.title-text{
+    display: inline-block;
+    width: 40%;
+    color: #2e5a1c;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.title-text p{
+    padding: 5px 20px;
+    background-color: #ecf0c6a3;
+}
+.title-text h2{
+    font-size: 2em;
+    color: #f5f5f5;
+}
+#title img{
+    width:50%;
+}
+
+
+/* Feature and brand details  */
+#variety{
+    background-image: url(imgs/fruit-pattern.png);
+    box-shadow: inset -1px 0px 20px 0px;
+    /* font-size: 1.5rem; */
+}
+#variety h2{
+    font-size: 2rem;
+    color: #005affad;
+}
+.var-text{
+    background-color: #edf0c7cf;
+    padding: 5% 25%;
+    color: #218a00;
+    font-weight: 500;
+}
+
+#health-sec{
+    background-image: url(imgs/safety-pattern.png);
+}
+.health-text{
+    padding:0% 25%;
+    padding-bottom: 26%;
+}
+
+.health-text h2{
+    color: white;
+}
+
+.health-text p{
+    color: #2e5a1c;
+    font-weight: 500;
+    padding: 5px 20px;
+    background-color: #ecf0c6a3;
+}
+
+
+/* footer  */
+#footer{
+    /* bottom: 0px; */
+    padding:5%;
+    background-color: #2e5a1c;
+    position: relative;
+}
+.contact-links{
+    font-size: 110%;
+    text-decoration: none;
+    color: #4e9525;
+    padding: 2.5%;
+}
+.contact-links:hover{
+    text-decoration: underline;
+    color: #edf0c7;
+}
+.trees{
+    position: absolute;
+    background-image: url(imgs/chris-trees.png);
+    height: 84px;
+    width: 100%;
+    bottom: 100%;
+    left: 0px;
+}
+
+
+@media(max-width:1100px){
+    #title{flex-direction: column-reverse;}
+    #title{
+        padding: 7% 5% 10%;
+    }
+    .title-text{
+        width: 50%;
+    }
+}
+@media(max-width:855px){
+    #title{
+        text-align: center;
+    }
+    .title-text{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+}
+@media(max-width:616px){
+    .active-link{
+        display: none;
+    }
+    #title{
+        padding: 5% 2%;
+    }.title-text{
+        width: 80%;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right:2rem;
+    }
+    #title img{
+        width: 80%;
+    }
+    .var-text,.health-text{
+        padding: 3.5% 10%;
+    }
+}
+@media(max-width:520px){
+    nav li{
+        display: block;
+    }
+    nav ul{
+        /* position: static; */
+        margin: 5px auto;
+        right: 0rem;
+        padding: 0;
+        letter-spacing: 1px;
+    }
+    #health-sec{
+        padding: 10% 7% 25%;
+    }
+    section{padding: 0;}
+    .var-text{padding: 10.5% 20%;}
+}
+@media(max-width:320){
+    .health-text,.var-text{
+        padding: 10.5% 2.5%;
+    }
+    .title-text{
+        width: 100%;
+    }
+    #title img{
+        width: 90%;
+    }
+}
